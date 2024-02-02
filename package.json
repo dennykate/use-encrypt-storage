@@ -1,0 +1,47 @@
+{
+  "name": "use-crypt-storage",
+  "version": "0.0.21",
+  "description": "use-crypt-storage is a simple and secure utility for managing browser localStorage with encryption. It provides a React hook that seamlessly integrates with the brower's localStorage and leverages the robust encryption capabilities of crypto-js. This package ensures that sensitive information stored in localStorage is crypt, adding an extra layer of protection to your application's data.",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "babel src -d dist",
+    "prepublishOnly": "npm run build"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Denny Kate",
+    "email": "dennykate22@gmail.com",
+    "url": "https://github.com/dennykate"
+  },
+  "homepage": "https://github.com/dennykate",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dennykate"
+  },
+  "bugs": {
+    "url": "https://github.com/dennykate/issues",
+    "email": "dennykate22@gmail.com"
+  },
+  "keywords": [
+    "react",
+    "reactjs",
+    "crypto-js",
+    "localStorage",
+    "encrypt",
+    "decrypt",
+    "set",
+    "get",
+    "remove"
+  ],
+  "devDependencies": {
+    "@babel/cli": "^7.23.9",
+    "@babel/preset-env": "^7.23.9",
+    "@babel/preset-react": "^7.23.3",
+    "@types/crypto-js": "^4.2.2",
+    "typescript": "^4.6.4"
+  },
+  "peerDependencies": {
+    "crypto-js": "^4.2.0",
+    "react": "^18.2.0"
+  }
+}
