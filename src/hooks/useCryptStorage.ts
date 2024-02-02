@@ -29,7 +29,7 @@ const useCryptStorage = () => {
       const value = localStorage.getItem(key);
       const expirationTimestamp = localStorage.getItem(`${key}_expiration`);
 
-      if (!value) throw new Error("Invalid key");
+      if (!value) return null;
 
       if (
         expirationTimestamp &&
@@ -37,7 +37,7 @@ const useCryptStorage = () => {
       ) {
         localStorage.removeItem(key);
         localStorage.removeItem(`${key}_expiration`);
-        throw new Error("Expired key");
+        return null;
       }
 
       const decryptedValue = AES.decrypt(value, secretKey).toString(

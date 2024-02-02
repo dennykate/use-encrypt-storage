@@ -1,6 +1,6 @@
 {
   "name": "use-crypt-storage",
-  "version": "0.0.21",
+  "version": "0.0.31",
   "description": "use-crypt-storage is a simple and secure utility for managing browser localStorage with encryption. It provides a React hook that seamlessly integrates with the brower's localStorage and leverages the robust encryption capabilities of crypto-js. This package ensures that sensitive information stored in localStorage is crypt, adding an extra layer of protection to your application's data.",
   "main": "src/index.ts",
   "scripts": {
@@ -13,13 +13,13 @@
     "email": "dennykate22@gmail.com",
     "url": "https://github.com/dennykate"
   },
-  "homepage": "https://github.com/dennykate",
+  "homepage": "https://github.com/dennykate/use-crypt-storage",
   "repository": {
     "type": "git",
-    "url": "https://github.com/dennykate"
+    "url": "https://github.com/dennykate/use-crypt-storage"
   },
   "bugs": {
-    "url": "https://github.com/dennykate/issues",
+    "url": "https://github.com/dennykate/use-crypt-storage/issues",
     "email": "dennykate22@gmail.com"
   },
   "keywords": [
