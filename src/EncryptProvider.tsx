@@ -8,9 +8,9 @@ interface ProviderProps extends ContextProps {
   children: React.ReactNode;
 }
 
-const CryptContext = createContext<ContextProps>(null!);
+const EncryptContext = createContext<ContextProps>(null!);
 
-const CryptProvider = ({ secretKey, children }: ProviderProps) => {
+const EncryptProvider = ({ secretKey, children }: ProviderProps) => {
   const contextValue = useMemo(
     () => ({
       secretKey,
@@ -19,14 +19,14 @@ const CryptProvider = ({ secretKey, children }: ProviderProps) => {
   );
 
   return (
-    <CryptContext.Provider value={contextValue}>
+    <EncryptContext.Provider value={contextValue}>
       {children}
-    </CryptContext.Provider>
+    </EncryptContext.Provider>
   );
 };
 
-export const useCryptProvider = () => {
-  const context = useContext(CryptContext);
+export const useEncryptProvider = () => {
+  const context = useContext(EncryptContext);
 
   if (!context) {
     throw new Error("useCryptStorage hook must be used within CryptProvider");
@@ -34,4 +34,4 @@ export const useCryptProvider = () => {
   return context;
 };
 
-export default CryptProvider;
+export default EncryptProvider;

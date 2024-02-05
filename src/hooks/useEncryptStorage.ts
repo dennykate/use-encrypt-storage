@@ -2,10 +2,10 @@ import { AES } from "crypto-js";
 import CryptoJS from "crypto-js";
 import { useCallback } from "react";
 
-import { useCryptProvider } from "../CryptProvider";
+import { useEncryptProvider } from "../EncryptProvider";
 
-const useCryptStorage = () => {
-  const { secretKey } = useCryptProvider();
+const useEncryptStorage = () => {
+  const { secretKey } = useEncryptProvider();
 
   const set = useCallback(
     (key: string, value: string, expires: number | undefined = undefined) => {
@@ -14,7 +14,7 @@ const useCryptStorage = () => {
       localStorage.setItem(key, encryptedValue);
 
       if (expires) {
-        const expirationTimestamp = Date.now() + expires * 24 * 60 * 60 * 1000;
+        const expirationTimestamp = Date.now() + expires * 60 * 1000;
         localStorage.setItem(
           `${key}_expiration`,
           expirationTimestamp.toString()
@@ -56,4 +56,4 @@ const useCryptStorage = () => {
   return { set, get, remove };
 };
 
-export default useCryptStorage;
+export default useEncryptStorage;

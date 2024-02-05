@@ -1,1 +1,1 @@
-export { default as useCryptStorage } from "./useCryptStorage";
+export { default as useEncryptStorage } from "./useEncryptStorage";
