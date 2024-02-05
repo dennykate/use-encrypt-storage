@@ -167,7 +167,7 @@ To run this project, you will need to add the following environment variables to
 VITE_SECRET_KEY="mamakochittel" 
 
 # For CRA
-REACT_APP_SECRET_KEY="mamakochittel" // For CRA
+REACT_APP_SECRET_KEY="mamakochittel"
 ```
 
 
