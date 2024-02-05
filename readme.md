@@ -1,4 +1,3 @@
-
 ![Logo](https://i.postimg.cc/x1S24SwB/Logo.png)
 
 
@@ -163,11 +162,13 @@ function App() {
 
 To run this project, you will need to add the following environment variables to your .env file
 
-> Use with Vite
-`VITE_SECRET_KEY=mamakochittel`
- 
-> Use with CRA
-`REACT_APP_SECRET_KEY=mamakochittel`
+```bash
+# For Vite
+VITE_SECRET_KEY="mamakochittel" 
+
+# For CRA
+REACT_APP_SECRET_KEY="mamakochittel" // For CRA
+```
 
 
 ## Tech Stack
