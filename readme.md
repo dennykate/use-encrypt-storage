@@ -1,5 +1,5 @@
 
-![Logo](https://i.postimg.cc/DzY7KcxX/Logo.png)
+![Logo](https://i.postimg.cc/x1S24SwB/Logo.png)
 
 
 # use-encrypt-storage
