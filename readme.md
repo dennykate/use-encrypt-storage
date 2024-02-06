@@ -3,7 +3,7 @@
 
 # use-encrypt-storage
 
-use-crypt-storage is a simple and secure react hook for managing browser localStorage with encryption. It provides a React hook that seamlessly integrates with the brower's localStorage and leverages the robust encryption capabilities of crypto-js. This package ensures that sensitive information stored in localStorage is crypt, adding an extra layer of protection to your application's data.
+use-encrypt-storage is a simple and secure react hook for managing browser localStorage with encryption. It provides a React hook that seamlessly integrates with the brower's localStorage and leverages the robust encryption capabilities of crypto-js. This package ensures that sensitive information stored in localStorage with encryption, adding an extra layer of protection to your application's data.
 
 
 ## Roadmap
