@@ -95,7 +95,7 @@ function App() {
   // expireTime is in minutes
 
   const onSetHandler = useCallback(() => {
-    set("name", "Aung Myo Chit");
+    set("name", "Denny Kate");
   }, []);
 
 
@@ -122,7 +122,7 @@ function App() {
   const onGetHandler = useCallback(() => {
     const name = get("name");
 
-    console.log(name); // Aung Myo Chit
+    console.log(name); // Denny Kate
   }, []);
 
 
@@ -191,7 +191,7 @@ If you have any feedback, please reach out to me at dennykate22@gmail.com
 
 ## Authors
 
-- [Aung Myo Chit](https://www.github.com/dennykate)
+- [Denny Kate](https://www.github.com/dennykate)
 
 
 ## License
