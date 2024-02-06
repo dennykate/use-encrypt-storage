@@ -95,7 +95,7 @@ function App() {
   // expireTime is in minutes
 
   const onSetHandler = useCallback(() => {
-    set("name", "Denny Kate");
+    set("name", "Ma Ma Thwe");
   }, []);
 
 
@@ -122,7 +122,7 @@ function App() {
   const onGetHandler = useCallback(() => {
     const name = get("name");
 
-    console.log(name); // Denny Kate
+    console.log(name); // Ma Ma Thwe
   }, []);
 
 
